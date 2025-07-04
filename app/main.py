@@ -23,7 +23,4 @@ async def transcribe_audio(file: UploadFile = File(...)):
         "text": text
     }
 
-# Agregamos esto para correr directamente con python main.py si quieres probar local
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8001)
+
